@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    display:flex;
+    background-color: #2874f0;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    /* z-index: 5; */
+
+}
+form{
+    width: 100%;  /* wo pura imput text nhi le rha tha aage ka minus horha tha*/
+}
+.logo{
+    width:80px;
+}
+.logo img{
+    width: 100%;
+    padding-top: 15px;
+}
+a{
+    text-decoration: none;
+}
+.explore{
+    width: 80px;
+    display: flex;
+    white-space: nowrap; /*2 line meinaarhi hau exploere and plus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.explore a{
+    display: flex;
+}
+a:hover{
+    text-decoration: underline;
+    /* color: white; */
+    color: #2874f0;
+}
+.explore p{
+    color:  white;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 550;
+    padding-bottom: 15px;
+    
+    
+}
+.plus{
+    color: #ffe500;
+    /* margin-top: 0px; */
+    
+}
+.explore img{
+    width: 15px;
+    height: 10px;
+    margin: 0;
+
+}
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:38px;
+    width: 450px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 0px 15px;
+    margin: 0px 10px;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;  /* taki box neecha shift ho blue wle margin delkhe */
+    z-index: 17;
+    
+}
+.search-container input{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+
+
+}
+.search-container i{
+    color: #2874f0;
+}
+
+.recent-search{
+    position: absolute;
+    background-color: white;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+    height:400px ;
+    width: 100%;
+    top: 38px; /* height ke barabar taaki  wo neecha aaye aue seach box bharabar mein ho */
+    margin-left: -15px;  /* gab aarha btha halka sa ,left mein jo humne padding de thi input ke liya toh humnne usse minus kar diya toh ekdaama barabar meoin aagya */
+    border-top: 1px solid #ccc;
+    display: none; /*taki wo white box hath jai screen se */
+    z-index: 10;  /* chote se screen aarghi thi revent srch ki*/
+
+}
+
+.search-container:focus-within .recent-search{
+    display: block; /*jab mein sech container p click karugi tabhi wo recent search dekhega*/
+
+}
+.recent-list{
+    display: flex;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.recent-list p{
+   padding-left: 20px;
+   font-size: 15px;
+}
+
+.recent-list i{
+    font-size: 15px;
+    
+}
+.recent-list a img{
+    color: #2874f0;
+}
+.login-btn{
+    background-color: white; 
+    padding: 7px 40px; /* for box heiht and width*/
+    border: 1px solid white;
+    border-radius: 2px;
+    height: 20px;
+    font-size: 18px;
+    position: relative;
+
+}
+
+.login-btn a {
+    color: #2874f0;
+    font-weight: 550px;
+    text-decoration: none;
+
+}
+
+.login-menu{
+    position: absolute;
+    top:42px; /* login peecha chup rha tha white box ke isliye neecha kiskhkhaane ke liya 30diya*/
+    height: 250px;
+    width: 100%;
+    width: 200px;
+    background-color: white;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-left: -40px;
+    transform: translateX(-30%) ;  /* beech mein laane ke liya box ko wo more link ke pass tha isluya*/
+    display: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    z-index: 15;
+
+}
+
+.login-btn:hover .login-menu{
+    display: block;
+}
+
+.log-m-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.log-m-top a:hover{
+    text-decoration: underline;
+
+}
+
+.links a {
+    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.links p{
+      padding-left: 20px;
+      color: #474545;
+
+}
+.menu_nav_icon{
+    width: 15px;
+    color: #2874f0;
+}
+
+.become-seller{
+    padding: 0px 20px;
+    margin: 0 8px 0 20px;
+
+}
+
+.become-seller a{
+    color: white;
+    font-size: 18px;
+    font-weight: 30px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.more-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 550px;
+    padding: 0px 18px;
+    margin: 0 20px 0 5px;
+    position: relative;;
+
+
+}
+.icon_more{
+    font-size:10px;
+   
+    transition: transform 0.5s;
+    
+}
+
+
+.more-link i :hover{
+    transform: rotate(180deg);
+    
+} 
+.more-menu{
+    position: absolute;
+    background-color: white;
+    height: 150px;
+    width: 220px;
+    top: 35px;
+    transform: translateX(-39%) ;
+    display: none;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    font-size: 14px;
+    z-index: 15;
+
+}
+
+.more-link:hover .more-menu{
+    display: block;
+}
+ 
+.card-to{
+    display: flex;
+    font-size: 18px;
+    font-weight: 550px;
+    color: white;
+    margin: 0 12px;
+
+}
+
+.card-to i {
+    font-size: 15px;
+    margin-top: 4.5px ;
+}
+ 
+.card-to p{
+    padding: 0px 5px;
+    margin: 0 10px;
+
+}
+
+/* 2nd tab */
+.feature-product{
+     height: 103px;  /*hpeecha ka white color ka highr */
+     /* background-color: white; */
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+
+}
+.feature-product-img {
+    width:60px;
+}
+.feature-product-img img{
+    width: 100%;
+
+}
+.feature-product-name{
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 550px;
+    color: #474545;
+
+}
+.feature-product-name :hover{
+    text-decoration: underline;
+    color: #2874f0;
+}
+
+/* section 1 */
+.section-1 {
+    width: 100%;
+    height: 112px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.section-1-container{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+.section-1-item a :hover{
+    text-decoration: underline;
+    color: #2874f0;
+
+}
+
+/* slider bar  */
+/* .imageslidercontainer{
+    position: relative;
+    background-color: #f1f3f6;
+    height: 250px;
+    width: 100%;
+    padding: 10px 5px 0 10px;
+
+}
+.imagesliderbtn{
+    position:absolute;
+    z-index: 10;  taki image ke upper aaye wo
+    width: 99%;
+    display: flex;
+    justify-content: space-between;  dono ke corner mein hojai
+    align-items: center; taki buttone beech mein aye par wo aayga nahi hume height v deni padhegi
+    height: 100%; abh aajaiga
+} */
+
+/* .imagesliderbtn button{
+    padding: 30px 14px; button ko mota anh badha karne ke liya
+     background-color: white;
+     border: none;
+     box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+     font-size: 30px; icon ko badh karna ke liya
+     border-radius: 5px;
+     z-index: 13;
+} */
+/* .imagesliderlist{
+    position: absolute;
+    background-color:white;
+    z-index: 11;taki jab aap link p click kare wo nexyt page p le jai
+    width: 99%;
+    height: 90%;
+    top: 15px;
+    display: flex;
+    padding-right: 10px;
+
+}
+.imageslideritem{
+    min-width: 99%;
+    width: 100%;
+    max-width: 99%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateX(-300%);
+
+
+}  */
+/* .imageslideritem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}  */
+.imageSliderContainer{
+    position: relative;
+    height: 280px;
+    background-color: #f1f3f6;
+    padding: 10px 0px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.imageSliderBtn{
+    position: absolute;
+    /* z-index: 10; */
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.imageSliderBtn button{
+    padding: 30px 12px;
+    background-color: white;
+    border:none;
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    font-size: 30px;
+    /* border-radius: 5px; */
+    z-index: 13;
+}
+.imageSliderBtn button:nth-child(odd){
+    border-radius: 0px 3px 3px 0px;
+}
+.imageSliderBtn button:nth-child(even){
+    border-radius: 3px 0px 0px 3px;
+}
+
+
+.imageSliderList{
+    position: absolute;
+    /* top:15px; */
+    z-index: 11;
+    width: 99%;
+    height: 95%;
+    display: flex;
+    overflow: hidden;
+    
+}
+.imageSliderItem{
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* transform: translateX(-400%); */
+    transition: transform 0.5s;
+}
+.imageSliderItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+}
+main{
+    margin-bottom: 100px;
+     padding: 10px 10px; /*taki slider and electonic same pos mein aajai*/
+}
+
+/* best of electonic */
+.section-4{
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.section-4offers{
+    width: 230px;
+    height: 100%;
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90&quot");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section-4-offers-view{
+    margin-top: 132px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-4-offers-view button{
+    margin-top: 24px;
+    padding: 10px 5px;
+    background-color: #2874f0;
+    color: #f1f3f6;
+    height:42px;
+    width: 90px;
+    border-radius: 5px;
+    border: #2874f0;
+    cursor:pointer;
+    font-size: 14px;
+
+}
+.section-4-list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+.section-4-item{
+    width: 232px;
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-4-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.section-4-item-head{
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-4-item-price {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+}
+.section-4-item-explore{
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
+}
