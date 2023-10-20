@@ -15,7 +15,7 @@ header{
 
 }
 form{
-    width: 100%;  /* wo pura imput text nhi le rha tha aage ka minus horha tha*/
+    width: 100%;  
 }
 .logo{
     width:80px;
@@ -30,7 +30,7 @@ a{
 .explore{
     width: 80px;
     display: flex;
-    white-space: nowrap; /*2 line meinaarhi hau exploere and plus */
+    white-space: nowrap; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +77,7 @@ a:hover{
     margin: 0px 10px;
     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1),
     5px 5px 5px rgba(0, 0, 0, 0.1);
-    position: relative;  /* taki box neecha shift ho blue wle margin delkhe */
+    position: relative;  
     z-index: 17;
     
 }
@@ -100,16 +100,16 @@ a:hover{
     5px 5px 5px rgba(0, 0, 0, 0.1);
     height:400px ;
     width: 100%;
-    top: 38px; /* height ke barabar taaki  wo neecha aaye aue seach box bharabar mein ho */
-    margin-left: -15px;  /* gab aarha btha halka sa ,left mein jo humne padding de thi input ke liya toh humnne usse minus kar diya toh ekdaama barabar meoin aagya */
+    top: 38px; 
+    margin-left: -15px; 
     border-top: 1px solid #ccc;
-    display: none; /*taki wo white box hath jai screen se */
-    z-index: 10;  /* chote se screen aarghi thi revent srch ki*/
+    display: none; 
+    z-index: 10;  
 
 }
 
 .search-container:focus-within .recent-search{
-    display: block; /*jab mein sech container p click karugi tabhi wo recent search dekhega*/
+    display: block; 
 
 }
 .recent-list{
@@ -132,7 +132,7 @@ a:hover{
 }
 .login-btn{
     background-color: white; 
-    padding: 7px 40px; /* for box heiht and width*/
+    padding: 7px 40px; 
     border: 1px solid white;
     border-radius: 2px;
     height: 20px;
@@ -150,7 +150,7 @@ a:hover{
 
 .login-menu{
     position: absolute;
-    top:42px; /* login peecha chup rha tha white box ke isliye neecha kiskhkhaane ke liya 30diya*/
+    top:42px; 
     height: 250px;
     width: 100%;
     width: 200px;
@@ -158,7 +158,7 @@ a:hover{
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1),
     5px 5px 5px rgba(0, 0, 0, 0.1);
     margin-left: -40px;
-    transform: translateX(-30%) ;  /* beech mein laane ke liya box ko wo more link ke pass tha isluya*/
+    transform: translateX(-30%);
     display: none;
     padding: 15px 20px;
     font-size: 14px;
@@ -280,8 +280,8 @@ a:hover{
 
 /* 2nd tab */
 .feature-product{
-     height: 103px;  /*hpeecha ka white color ka highr */
-     /* background-color: white; */
+     height: 103px;  
+     
      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
 }
@@ -342,63 +342,7 @@ a:hover{
 
 }
 
-/* slider bar  */
-/* .imageslidercontainer{
-    position: relative;
-    background-color: #f1f3f6;
-    height: 250px;
-    width: 100%;
-    padding: 10px 5px 0 10px;
 
-}
-.imagesliderbtn{
-    position:absolute;
-    z-index: 10;  taki image ke upper aaye wo
-    width: 99%;
-    display: flex;
-    justify-content: space-between;  dono ke corner mein hojai
-    align-items: center; taki buttone beech mein aye par wo aayga nahi hume height v deni padhegi
-    height: 100%; abh aajaiga
-} */
-
-/* .imagesliderbtn button{
-    padding: 30px 14px; button ko mota anh badha karne ke liya
-     background-color: white;
-     border: none;
-     box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-     font-size: 30px; icon ko badh karna ke liya
-     border-radius: 5px;
-     z-index: 13;
-} */
-/* .imagesliderlist{
-    position: absolute;
-    background-color:white;
-    z-index: 11;taki jab aap link p click kare wo nexyt page p le jai
-    width: 99%;
-    height: 90%;
-    top: 15px;
-    display: flex;
-    padding-right: 10px;
-
-}
-.imageslideritem{
-    min-width: 99%;
-    width: 100%;
-    max-width: 99%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: translateX(-300%);
-
-
-}  */
-/* .imageslideritem img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   
-}  */
 .imageSliderContainer{
     position: relative;
     height: 280px;
@@ -464,7 +408,7 @@ a:hover{
 }
 main{
     margin-bottom: 100px;
-     padding: 10px 10px; /*taki slider and electonic same pos mein aajai*/
+     padding: 10px 10px; 
 }
 
 /* best of electonic */
